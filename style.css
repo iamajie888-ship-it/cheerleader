@@ -1,0 +1,15 @@
+body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #ff9a9e, #fecfef); margin: 0; padding: 20px; text-align: center; }
+.container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+h1 { color: #e91e63; font-size: 2em; }
+#match-container { display: flex; align-items: center; justify-content: center; gap: 30px; margin: 40px 0; height: 250px; }
+.player { background: #ff5722; color: black; padding: 30px 15px; font-size: 1.4em; font-weight: bold; border-radius: 15px; min-width: 140px; cursor: pointer; transition: transform 0.2s; display: flex; align-items: center; justify-content: center; }
+.player:hover { transform: scale(1.05); }
+.vs { font-size: 2.5em; color: #f44336; font-weight: bold; display: flex; align-items: center; justify-content: center; min-height: 80px; }
+.buttons { display: flex; gap: 20px; justify-content: center; }
+button { background: #4caf50; color: white; border: none; padding: 15px 30px; font-size: 1.2em; border-radius: 10px; cursor: pointer; transition: background 0.2s; }
+button:hover { background: #45a049; }
+button:disabled { background: #ccc; cursor: not-allowed; }
+#progress { font-size: 1.5em; color: #2196f3; margin: 20px 0; }
+#results ol { text-align: left; background: #e3f2fd; padding: 20px; border-radius: 10px; margin: 10px 0; }
+#results li { font-size: 1.3em; margin: 10px 0; color: #1976d2; }
+@media (max-width: 768px) { #match-container { flex-direction: column; height: 350px; gap: 15px; } .vs { font-size: 2em; } .player { font-size: 1.2em; padding: 25px 10px; } }
