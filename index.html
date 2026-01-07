@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>啦啦隊瑞士輪二選一 - 你的前三名</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 啦啦隊瑞士輪 2選1 🏅</h1>
+        <p>39位韓啦，6輪精準排名，絕不早淘汰！</p>
+        
+        <div id="game-area">
+            <div id="match-container">
+                <div id="player1" class="player">?</div>
+                <div class="vs">VS</div>
+                <div id="player2" class="player">?</div>
+            </div>
+            <div class="buttons">
+                <button id="choose1" onclick="choosePlayer(1)">選擇左邊</button>
+                <button id="choose2" onclick="choosePlayer(2)">選擇右邊</button>
+            </div>
+        </div>
+        
+        <div id="progress">第 <span id="round">1</span>/6 輪</div>
+        <button id="restart" onclick="restart()" style="display:none;">🔄 重新開始</button>
+        
+        <div id="results" style="display:none;">
+            <h2>你的前三名</h2>
+            <ol id="top3"></ol>
+            <h3>Top 10 完整排名</h3>
+            <ol id="top10"></ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
